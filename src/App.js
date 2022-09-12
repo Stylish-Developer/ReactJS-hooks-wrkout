@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import UseEffect from "./hooks/UseEffect";
+import Usestate from "./hooks/Usestate";
 
 const App = () => {
-  return(
+  return (
     <>
-      <p> Hello World :-() </p>
+      <Usestate />
+      <UseEffect />
     </>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,31 +1,30 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 
 const Usestate = () => {
-    const [number,setNumber] = useState(0);
+  const [number, setNumber] = useState(0);
 
-    const incrementHandle = () => {
-        setNumber( number + 1 );
-    }
-    const decrementHandle = () => {
-        setNumber( number - 1 );
-    }
+  const incrementHandle = () => {
+    setNumber(number + 1);
+  };
+  const decrementHandle = () => {
+    setNumber(number - 1);
+  };
 
   return (
     <>
-      <div class="container-fluid">
-        <div class="row">
+      <div className="container-fluid">
+        <div className="row">
           <div
-            class="col-12 d-flex justify-content-evenly align-items-center p-3"
+            className="col-12 d-flex justify-content-evenly align-items-center p-3"
             style={{ backgroundColor: "#000000" }}
           >
-            <div class="row w-100">
-              <div class="col-6 d-flex justify-content-end align-items-center">
+            <div className="row w-100">
+              <div className="col-6 d-flex justify-content-end align-items-center">
                 <span style={{ color: "#fff", fontWeight: "lighter" }}>
-                  {" "}
-                  Number - { number }
+                  Number - {number}
                 </span>
               </div>
-              <div class="col-6  d-flex justify-content-end align-items-center">
+              <div className="col-6  d-flex justify-content-end align-items-center">
                 <button
                   className="btn btn-primary me-2"
                   onClick={incrementHandle}
